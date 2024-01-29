@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Underwater Diving Store | Contact Us</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="icon" href="img/tab-logo.png">
+
+</head>
+
+<body>
+
+    <!-- pop up window -->
+    <div class="contacts">
+        <div class="overlay"></div>
+        <div class="pop-contacts-content pop-contacts-transition">
+            <a class="pop-contacts-close" href="#"> X </a>
+            <h3> Thank you for contacting us! </h3>
+            <p class="pop-contacts-text">We're on it! Your message has been successfully sent over to our Customer Care team. We'll get back to you as soon as possible to the email address you provided.</p>
+            <div class="center-button">
+                <a href="homepage.html" class="button in-line submit-button">
+                    <p>Home</p>
+                    <div class="easing-up"></div>
+                </a>  
+            </div> 
+        </div>
+    </div>
+    <!-- end pop up window -->
+
+    <div class="site-container">
+        <div class="site-pusher">
+
+            <header class "website header">
+                <a href="#" class="header-icon" id="header-icon"></a>
+                <a href="homepage.html" class="header-logo">Underwater Diving Store</a>
+
+                <nav class="menu">
+                    <a href="product-list.html">Diving Gear</a>
+                    <a href="event.html">Events</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact-us.html">Contact</a>
+                </nav>
+
+                <ul class="login-and-bag">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">|</a></li>
+                    <li><a href="bag-overview.html">Shopping Bag</a></li>
+                </ul>         
+            </header>
+
+            <div class="content-wrapper contact">
+
+                <h1 class="website"><span>Contact Us</span></h1>
+
+                <div class="contact-form row">
+                    <div class="six columns contact-img">
+                        <img src="img/contact.jpeg" alt="an image with text about making diving gear">
+                    </div>
+
+                    <div class="six columns last">
+                        
+                        <p class="contact-description">We want to serve you better than the best. Let us know about your shopping experience at Underwater Diving Store, shoot us a question, or fire over a comment, and we'll get back to you.</p>
+
+                        <form class="my-form">
+                            <div class="text-input">
+                                <label id="Name">Name*</label><i class="bar"></i>
+                                <input id="address" type="text" required="required"/>
+                            </div>
+
+                            <div class="text-input">
+                                <label for="subject">Subject*</label><i class="bar"></i>
+                                <input id="subject" type="text" required="required"/>
+                            </div>
+
+                            <div class "text-input">
+                                <label for "email">Email*</label><i class="bar"></i>
+                                <input id="email" type="text" required="required"/>
+                            </div>
+
+                            <div class="text-input">
+                                <label for="textarea">Comment</label>
+                                <textarea class="contact-textarea" id="textarea" required="required" placeholder="Enter comment here..."></textarea>
+                            </div>
+                            <div class="contact-us-buttons">
+                                <a href="" class="button in-line left">
+                                    <p>Reset</p>
+                                    <div class="easing-down"></div>
+                                </a>
+                                <a href="#" class="button in-line right contact-submit">
+                                    <p>Submit</p>
+                                    <div class="easing-up"></div>
+                                </a>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="contacts-other-info row">
+                    <h2> Other Ways to get in touch</h2>
+                    <div class="info-detail twelve columns">
+                        <div class="icon three columns" id="email-icon">
+                            <img class="icon-images" src="img/email.png" alt="an email icon image">
+                            <div class="icon-title-info"> <p>service@underwaterdivingstore.com</p></div>
+                        </div>
+
+                        <div class="icon three columns" id="phone-icon">
+                            <img class="icon-images" src="img/phone.png" alt="a phone icon image">
+                            <div class="icon-title-info"> <p>+212548792</p></div>
+                        </div>
+
+                        <div class="icon three columns" id="chat-icon">
+                            <img class="icon-images" src="img/chat.png" alt="a chat icon image">
+                            <div class="icon-title-info"> <p><a href="#" class="in-text">Chat Now</a></p></div>
+                        </div>
+
+                        <div class="icon three columns last" id="location-icon">
+                            <img class="icon-images" src="img/location.png" alt="a location icon image">
+                            <div class="icon-title-info"> <p>Morocco ,Casablanca</p></div>
+                        </div>
+                    </div>                       
+                </div>
+
+                <!-- Map -->
+                <div id="map"></div>
+                <script>
+                    function initMap() {
+                        var UnderwaterDivingStore = { lat: 49.279660, lng: -122.918856 };
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 15,
+                            center: UnderwaterDivingStore
+                        });
+
+                        var contentString = '<div id="content">' +
+                            '<div id="siteNotice">' +
+                            '</div>' +
+                            '<h4 id="firstHeading" class="firstHeading">Underwater Diving Store</h4>' +
+                            '<div id="bodyContent">' +
+                            '<p><b>14 Casablanca Dr, Imad, Morocco</b>' +
+                            '</div>' +
+                            '</div>';
+
+                        var infowindow = new google.maps.InfoWindow({
+                            content: contentString
+                        });
+
+                        var marker = new google.maps.Marker({
+                            position: UnderwaterDivingStore,
+                            map: map,
+                        });
+                        marker.addListener('click', function () {
+                            infowindow.open(map, marker);
+                        });
+                    }
+                </script>
+               
+
+            </div> <!-- end content-wrapper -->
+
+            <footer>
+                <div class="row footer-div">
+
+                    <div class="footer-component three columns">
+                        <ul>
+                            <li class="footer-title"><a href="#">Help</a></li>
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Shipment Policy</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-component three columns">
+                        <ul>
+                            <li class="footer-title"><a href="#">Contact Us</a></li>
+                            <li><a href="#">Store Locator</a></li>
+                            <li><a href="#">Customer Care</a></li>
+                            <li><a href="#">Retailer Enquiries</a></li>
+                            <li><a href="#">Hours of Service</a></li>
+                            <li><a href="#">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-component three columns">
+                        <ul>
+                            <li class="footer-title"><a href="#">For Andrew &amp; Sophia</a></li>
+                            <li><a href="style-sheet.html">Style Sheet</a></li>
+                            <li><a href="citation.html" target="_blank">Citation</a></li>
+                            <li><a href="site-map.html" target="_blank">Site Map</a></li>
+                          </ul>
+                    </div>
+
+                    <div class="footer-component three columns last">
+                        <ul>
+                            <li class="footer-title"><a href="#">Newsletter</a></li>
+                            <li>
+                                <form class='newsletter'>
+                                    <input placeholder='E-mail address' type='text'>
+                                    <button>ENTER</button>
+                                </form>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="footer-title"><a href="#">Follow Us</a></li>
+                            <li class="social-icon">
+                                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-google-plus"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div><!-- end footer div -->
+            </footer>
+
+        </div> <!-- END site-pusher -->
+    </div> <!-- END site-container -->
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

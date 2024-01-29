@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>P02 - Style Guide</title>
+  		<script src="highlighter/prettify.js"></script>
+  		<link rel="icon" href="img/tab-logo.png">
+  		<link rel="stylesheet" href="css/style.css">
+  		<link rel="stylesheet" href="css/fonts.css">
+  		<link rel="stylesheet" href="css/grid.css">
+  		<link rel="stylesheet" href="highlighter/prettify.css">
+
+
+	</head>
+
+	<body>
+
+		<div class = "nav-section">
+			
+			<h1 class="style-sheet">Style Guide</h1>
+
+			<a href="#interactive-elements">Interactive Elements</a>
+		    <a href="#text-styling">Text-Styling</a>
+		    <a href="#combined-elements">Combined Elements</a>
+		    <a href="#sitemap">Site Map</a>
+		    <a href="#citation">Citation</a>
+		</div>
+
+		<div class="content-section">
+
+			<div class="component" id="interactive-elements">
+
+				<h2 class="style-sheet">Interactive Elements</h2>
+
+				<div class=sub-component>
+
+					<h3 class="style-sheet">In-text Link</h3>
+					
+					<h4 class="style-sheet">Example</h4>
+					<p class="style-sheet">This is a paragraph to demonstrate the style of in-text <a href="#" class="in-text">link</a> in the website.</p>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">a.in-text</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+						<pre class="prettyprint html-code">
+&lt;a href="#" class=".in-text"&gt;link&lt;/a&gt;
+						</pre>
+					</div>
+
+				</div>
+
+				<div class="sub-component">
+					
+					<h3 class="style-sheet">Nav Button Style</h3>
+					
+					<h4 class="style-sheet">Example</h4>
+					<div class="example">
+						<div class="header row">      
+					      <nav class="menu ">
+					         <a href="#">Eyewear</a>
+					       	 <a href="#">Event</a>
+					         <a href="#">About</a>
+					         <a href="#">Contact</a>
+					      </nav>					      
+					    </div>
+					</div>
+					
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.nav li a</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">		
+					
+						<pre class="prettyprint html-code">
+&lt;nav class="menu"&gt;
+	&lt;a href="#"&gt;Eyewear&lt;/a&gt;
+	&lt;a href="#"&gt;Event&lt;/a&gt;
+	&lt;a href="#"&gt;About&lt;/a&gt;
+	&lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+						</pre>
+					</div>
+
+				</div>
+
+			<div class="sub-component">
+
+					<h3 class="style-sheet">Submit/Rest Buttons</h3>
+					
+					<h4 class="style-sheet">Example</h4>
+					<div class="example">
+						<a href="#" class="button in-line">
+							<p>Submit</p>
+							<div class="easing-up"></div>
+						</a>
+						<a href="#" class="button in-line">
+							<p>Reset</p>
+							<div class="easing-down"></div>
+						</a>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.button</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;a href="#" class="butto"&gt;
+	&lt;p&gt;Submit&lt;/p&gt;
+	&lt;div class="easing-up"&gt;&lt;/div&gt;
+&lt;/a&gt;
+&lt;a href="#" class="button"&gt;
+	&lt;p&gt;Reset&lt;/p&gt;
+	&lt;div class="easing-down"&gt;&lt;/div&gt;
+&lt;/a&gt;
+			
+							</pre>
+					</div>
+
+				</div>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Text Input &amp; Label</h3>
+					
+					<h4 class="style-sheet">Example</h4>
+					<div class="example">
+						<form action="#" class="my-form">
+							<label for="name">Name</label>
+							<input id="name" type="text" name="name" placeholder="Name" />  
+
+							<label for="select">Select</label>
+							<select id="select">
+							  <option value="volvo">Volvo</option>
+							  <option value="saab">Saab</option>
+							  <option value="opel">Opel</option>
+							  <option value="audi">Audi</option>
+							</select>
+
+							<label for="textarea">Comment</label>
+							<textarea id="textarea" required="required" placeholder="Enter comment here..."></textarea>
+
+							<div class="checkbox">
+						      <label>
+						      <input type="checkbox"/><i class="check-sign"></i>Save Password
+						      </label>
+						    </div>  
+						</form>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.my-form input, .my-form select, .my-form textarea, .my-form .checkbox</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;form action="#" class="my-form"&gt;
+	&lt;label for="name"&gt;Name&lt;/label&gt;
+	&lt;input id="name" type="text" name="name" placeholder="Name" /&gt;  
+
+	&lt;label for="select"&gt;Select&lt;/label&gt;
+	&lt;select&gt;
+	  &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+	  &lt;option value="saab"&gt;Saab&lt;/option&gt;
+	  &lt;option value="opel"&gt;Opel&lt;/option&gt;
+	  &lt;option value="audi"&gt;Audi&lt;/option&gt;
+	&lt;/select&gt;
+
+	&lt;label for="name"&gt;Comment&lt;/label&gt;
+	&lt;textarea id="textarea" required="required" placeholder="Enter comment here..."&gt;&lt;/textarea&gt;
+
+	&lt;div class="checkbox"&gt;
+      &lt;label&gt;
+      &lt;input type="checkbox"/&gt;&lt;i class="check-sign"&gt;&lt;/i&gt;Save Password
+      &lt;/label&gt;
+    &lt;/div&gt;  
+&lt;/form&gt;
+							</pre>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="component" id="text-styling">
+
+				<h2 class="style-sheet">Text Styling</h2>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Headings</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+					<div class="example">
+						<h1 class="website"> <span>Heading 1</span></h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">h1, h2, h3, h4</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+							</pre>
+					</div>
+
+				</div>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Paragraph</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+					<div class="example">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut accumsan nunc id tincidunt luctus. Sed scelerisque id leo vel gravida. Aliquam erat volutpat. Pellentesque vehicula fringilla dolor ac dignissim. Sed ornare lobortis nunc ut gravida. Phasellus non felis nec lorem sagittis dictum varius sit amet risus. Sed semper arcu a aliquam cursus. Donec aliquam arcu augue, a pretium orci pellentesque vitae. Aliquam sollicitudin turpis vitae nulla sagittis, in facilisis massa vestibulum.</p>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet"> p</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;p&gt;Paragraph.&lt;/p&gt;
+							</pre>
+					</div>
+
+				</div>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Bulleted List</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+					<div class="example">
+						<ul>
+							<li><span>Item 1</span></li>
+							<li><span>Item 2</span></li>
+							<li><span>Item 3</span></li>
+							<li><span>Item 4</span></li>
+						</ul>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">ul li</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;ul&gt;
+	&lt;li&gt;&lt;span&gt;Item 1&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 2&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 3&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 4&lt;/span&gt;&lt;/li&gt;					
+&lt;/ul&gt;
+							</pre>
+					</div>
+
+				</div>				
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Numbered List</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+					<div class="example">
+						<ol>
+							<li><span>Item 1</span></li>
+							<li><span>Item 2</span></li>
+							<li><span>Item 3</span></li>
+							<li><span>Item 4</span></li>
+						</ol>
+					</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">ol li</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+							<pre class="prettyprint html-code">
+&lt;ol&gt;
+	&lt;li&gt;&lt;span&gt;Item 1&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 2&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 3&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;span&gt;Item 4&lt;/span&gt;&lt;/li&gt;					
+&lt;/ol&gt;
+							</pre>
+					</div>
+
+				</div>	
+
+			</div>
+
+			<div class="component" id="combined-elements">
+
+				<h2 class="style-sheet">Combined Elements</h2>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Main Navigation</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+						<div class="example">
+							<header class="header row">
+					      		<a href="#" class="header-icon" id="header-icon"></a>
+					      		<a href="homepage.html" class="header-logo">IKIGAI</a>
+	      
+							    <nav class="menu">
+							       <a href="product-list.html">Eyewear</a>
+							       <a href="event.html">Event</a>
+							       <a href="about.html">About</a>
+							       <a href="contact-us.html">Contact</a>
+							    </nav>
+
+					      		<ul class="login-and-bag">
+					          		<li><a href="#">Login</a></li>
+					         		<li><a href="#">|</a></li>
+					          		<li><a href="bag-overview.html">Bag</a></li>
+					          	</ul>		      
+			   				</header>
+
+
+						</div>
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.nav</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					
+					<div class="sample-code">
+	
+							<pre class="prettyprint html-code">
+&lt;header class="header"&gt;
+	&lt;a href="#" class="header-icon" id="header-icon"&gt;&lt;/a&gt;
+	&lt;a href="homepage.html" class="header-logo"&gt;IKIGAI&lt;/a&gt;
+
+	&lt;nav class="menu"&gt;
+		&lt;a href="product-list.html"&gt;Eyewear&lt;/a&gt;
+		&lt;a href="event.html"&gt;Event&lt;/a&gt;
+		&lt;a href="about.html"&gt;About&lt;/a&gt;
+		&lt;a href="contact-us.html"&gt;Contact&lt;/a&gt;
+	&lt;/nav&gt;
+
+	&lt;ul class="login-and-bag"&gt;
+		&lt;li&gt;&lt;a href="#"&gt;Login&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#"&gt;|&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="bag-overview.html"&gt;Bag&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;		     
+&lt;/header&gt;
+							</pre>
+							
+					</div>
+
+				</div>
+
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Product List</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+						
+					<div class="example row">
+						
+							<div class="product-item six columns">
+								<img src="img/image.jpg " alt="a placeholder image">
+									<div class="product-list">
+										<h3>Product Name</h3>
+										<h4 class="price">CAD 1000</h4>
+									</div>
+							</div>
+
+							<div class="product-item six columns">
+								<img src="img/image.jpg" alt="a placeholder image">
+									<div class="product-list">
+										<h3>Product Name</h3>
+										<h4 class="price">CAD 1000</h4>
+									</div>
+							</div>
+
+							<div class="product-item six columns last">
+								<img src="img/image.jpg" alt="a placeholder image">
+									<div class="product-list">
+										<h3>Product Name</h3>
+										<h4 class="price">CAD 1000</h4>
+									</div>
+							</div>
+
+						</div>
+
+					
+
+					<h4 class="style-sheet">CSS Selector</h4>
+					<p class="style-sheet">.product-item .product-list</p>
+
+					<h4 class="style-sheet">Sample Code</h4>
+					<div class="sample-code">
+						
+							<pre class="prettyprint html-code">
+&lt;div class="product-item"&gt;
+	&lt;img src="img/image.jpg" alt="a placeholder image"&gt;
+	&lt;div class="product-list"&gt;
+		&lt;h3&gt;Product Name&lt;/h3&gt;
+		&lt;h4 class="price"&gt;CAD 1000&lt;/h4&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+							</pre>
+							
+					</div>
+
+				</div>	
+				
+				<div class="sub-component">
+
+					<h3 class="style-sheet">Grid Structure</h3>
+						
+					<h4 class="style-sheet">Example</h4>
+					
+					<div class="example">
+					
+						<div class="row">
+
+							<div class="three columns demo"><p>3</p></div>				    
+							<div class="three columns demo"><p>3</p></div>					    
+							<div class="three columns demo"><p>3</p></div>					  
+							<div class="three columns last demo"><p>3</p></div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="four columns demo"><p>4</p></div>				    
+							<div class="four columns demo"><p>4</p></div>				    
+							<div class="four columns last demo"><p>4</p></div>
+
+						</div>
+
+						<div class="row">
+
+							<div class="four columns demo"><p>4</p></div>
+							<div class="eight columns demo last"><p>8</p></div>					    
+
+						</div>
+
+						<div class="row">
+
+							<div class="twelve columns demo"><p>12</p></div>
+
+						</div>
+
+					</div>
+
+				<h4 class="style-sheet">CSS Selector</h4> 
+				<p class="style-sheet">.row .three.columns, .row .four.columns, .row .twelve.columns</p>
+
+				<h4 class="style-sheet">Sample Code</h4>
+					
+					<div class="sample-code">
+
+							<pre class="prettyprint html-code">
+&lt;div class="row"&gt;
+
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;					    
+	&lt;div class="three columns demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;					  
+	&lt;div class="three columns last demo"&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;				    
+	&lt;div class="four columns last demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="four columns demo"&gt;&lt;p&gt;4&lt;/p&gt;&lt;/div&gt;
+	&lt;div class="eight columns demo last"&gt;&lt;p&gt;8&lt;/p&gt;&lt;/div&gt;					    
+
+&lt;/div&gt;
+
+&lt;div class="row"&gt;
+
+	&lt;div class="twelve columns demo"&gt;&lt;p&gt;12&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+							</pre>
+							
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="component" id="sitemap">
+
+				<h2 class="style-sheet">Site Map</h2>
+
+				<div class=sub-component>
+
+					<a href=site-map.html><img src="img/site-map.jpg" alt="site map image"></a>
+					
+				</div>
+
+			</div>										
+
+			<div class="component" id="citation">
+
+				<h2 class="style-sheet">Citation</h2>
+
+				<div class=sub-component>
+
+					<p class="style-sheet">Click<a href="citation.html" target="_blank" class="in-text"> here</a> to open citation page.</p>
+					
+				</div>
+
+			</div>			
+
+
+		</div> <!-- end of content section -->
+		
+		<script>prettyPrint();</script>
+
+	</body>
+
+</html>
